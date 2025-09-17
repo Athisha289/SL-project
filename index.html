@@ -1,0 +1,125 @@
+<html lang="ta">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title >Praveen Beeda Ice-cream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PBI</div>
+        <div>
+          <h1>PRAVEEN BEEDA ICE-CREAM</h1>
+          <p class="lead">Beeda supply, Labours, Ice cream, Fruits and Garlands are available</p>
+        </div>
+      </div>
+      <div>
+        <div style="text-align:right">
+          <div style="font-weight:700">Contact: <a href="tel:+919042584675">+91 9787660675</a></div>
+          <a class="wa-btn" href="https://wa.me/919042584675?text=Vanakkam%20-%20I want%20to%20order%20ice%20cream%20for%20a%20marriage" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="hero">
+      <div>
+        <div class="card">
+          <h2>Our Services</h2>
+          <p class="lead">Delight made for everyone, anywhere and anytime</p>
+
+          <h3 style="margin-top:12px">Menu</h3>
+          <div class="menu-grid">
+            <div class="item">
+              <div style="display:flex;justify-content:space-between"><strong>Beeda</strong><span class="price"></span></div>
+              <div style="color:var(--muted);font-size:13px">Sweet Beeda</div>
+            </div>
+            <div class="item">
+              <div style="display:flex;justify-content:space-between"><strong>Ice cream</strong><span class="price"></span></div>
+              <div style="color:var(--muted);font-size:13px">Amul, Dairy Day, Arun etc.. are available</div>
+            </div>
+            <div class="item">
+              <div style="display:flex;justify-content:space-between"><strong>Cut Fruit</strong><span class="price"></span></div>
+              <div style="color:var(--muted);font-size:13px">fruits are chosen according to the orderer need</div>
+            </div>
+            <div class="item">
+              <div style="display:flex;justify-content:space-between"><strong>Welcome Drinks</strong><span class="price"></span></div>
+              <div style="color:var(--muted);font-size:13px">Like watermelon, grapse,pine apple, orange etc...</div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Gallery</h3>
+          <div class="gallery">
+            <img src="img1.jpeg" alt="ice cream 1">
+            <img src="img2.jpeg" alt="ice cream 2">
+            <img src="img3.jpeg" alt="ice cream 3">
+            <img src="img4.jpeg" alt="ice cream 4">
+            <img src="img5.jpeg" alt="ice cream 5">
+            <img src="img6.jpeg" alt="ice cream 6">
+
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>For Order</h3>
+          <form id="orderForm" action="https://formspree.io/f/xovnopkp" method="POST">
+            <label>Name <input name="name" required></label><br><br>
+            <label>Mobile Number <input name="phone" pattern="[0-9]{10}" required placeholder="10-digit"></label><br><br>
+            <label>Menu</label><br>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="beeda" name="itm" value="Beeda">
+                    <label for="beeda">Beeda</label>
+                 </div><br>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="icecream" name="itm" value="Ice cream">
+                    <label for="icecream">Ice Cream</label>
+                </div><br>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="garlands" name="itm" value="Garlands">
+                    <label for="garlands">Garlands</label>
+                </div><br>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="welcome" name="itm" value="Welcome drinks">
+                    <label for="welcome">Welcome Drinks</label>
+                </div><br>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="fruits" name="itm" value="Fruits">
+                    <label for="fruits">Fruits</label>
+                </div><br>
+            </div>   
+    <br><br>
+            <label>Date of the event<input type="date" name="date" required></label><br><br>
+            <label>Additional Needs <textarea name="notes" rows="3"></textarea></label><br><br>
+            <!-- hidden field to identify source -->
+            <input type="hidden" name="_subject" value="New Ice-cream Order (website)">
+            <input type="hidden" name="_language" value="en">
+            <button type="submit">Place Order</button>
+          </form>
+
+          <div style="margin-top:12px;color:var(--muted);font-size:13px">
+            Or
+            <div style="margin-top:8px">
+              <a class="wa-btn" href="https://wa.me/919042584675?text=Vanakkam%20-%20I want%20to%20order%20ice%20cream%20for%20a%20marriage" target="_blank" rel="noopener"><b>WhatsApp</b></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div>Praveen Beeda Ice-cream — All rights reserved • <a href="tel:+919042584675">+919042584675 </a></div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
