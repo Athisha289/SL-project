@@ -60,18 +60,24 @@
         gap:8px}
     .checkbox-group {
     display: flex;
-    gap: 20px; /* space between each checkbox+label */
-    flex-wrap: wrap; /* allows wrap on smaller screens */
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;  /*space between each checkbox+label */
+    flex-wrap: wrap;  /*allows wrap on smaller screens*/
+    align-items: start;
   }
 
   .checkbox-item {
     display: flex;
     align-items: center;
     gap: 5px;
+    justify-content: flex-start;
+    width: fit-content;
   }
     input,textarea,select{
-        width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb
+        width:100%;
+        padding:10px;
+        border-radius:8px;
+        border:1px solid #e5e7eb
     }
     button{
         background:var(--accent);
